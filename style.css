@@ -1,0 +1,122 @@
+/* Cores principais */
+:root {
+    --cor-branca: #FFFFFF;
+    --cor-preta: #000000;
+    --cor-cinza-escuro: #333333;
+    --cor-cinza-claro: #F2F2F2;
+    --cor-vermelho: #FF0000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-cinza-claro);
+    color: var(--cor-cinza-escuro);
+    margin: 0;
+}
+
+header, footer {
+    background-color: var(--cor-preta);
+    color: var(--cor-branca);
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--cor-vermelho);
+}
+
+.cta-button {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branca);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: var(--cor-cinza-escuro);
+}
+
+.services {
+    text-align: center;
+    padding: 20px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    color: #333;
+}
+
+.service-item p {
+    color: #555;
+}
+
+.service-item .price {
+    color: #cc0000;
+    font-weight: bold;
+}
+
+.contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact label {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact button {
+    background-color: #cc0000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #a80000;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
